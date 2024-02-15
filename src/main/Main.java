@@ -10,7 +10,7 @@ public class Main {
         System.out.println(findMinimalPath("/foo/bar/../loo/../.."));
         System.out.println(findMinimalPath("/foo/../.."));
         System.out.println(findMinimalPath("/foo/./bar///.."));
-        System.out.println(findMinimalPath("/foo///.//../bar/"));
+        System.out.println(findMinimalPath("/foo///./loo/../bar/."));
 
     }
 
@@ -35,7 +35,7 @@ public class Main {
         else if (stringList.size() == 1)
             return "/" + stringList.get(0);
 
-        return String.join("/", stringList);
+        return "/" + String.join("/", stringList);
      }
 
 
