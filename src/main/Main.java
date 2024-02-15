@@ -32,8 +32,6 @@ public class Main {
 
         if(stringList.isEmpty())
             return "/";
-        else if (stringList.size() == 1)
-            return "/" + stringList.get(0);
 
         return "/" + String.join("/", stringList);
      }
