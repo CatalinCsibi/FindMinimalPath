@@ -30,9 +30,6 @@ public class Main {
             }
         }
 
-        if(stringList.isEmpty())
-            return "/";
-
         return "/" + String.join("/", stringList);
      }
 
